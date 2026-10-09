@@ -1,0 +1,22 @@
+Feature,Mean_Abs_SHAP,Rank,Model
+age,0.15584537048070982,1,Random Forest
+blood_urea_nitrogen,0.06850713315587005,2,Random Forest
+bp_systolic,0.033108796714932553,3,Random Forest
+uric_acid,0.0271534566919747,4,Random Forest
+ethnicity,0.026589085841263575,5,Random Forest
+albumin_serum,0.016986506406336855,6,Random Forest
+ever_smoked,0.014123183881395655,7,Random Forest
+diabetes_diagnosed,0.012408203473059962,8,Random Forest
+bp_diastolic,0.010314907594703372,9,Random Forest
+gender,0.01010267887516794,10,Random Forest
+calcium,0.00757578346041421,11,Random Forest
+bmi,0.007529755934511661,12,Random Forest
+phosphorus,0.006462649441381824,13,Random Forest
+poverty_income_ratio,0.006318224727329374,14,Random Forest
+height_cm,0.0063178085680811935,15,Random Forest
+weight_kg,0.005256106288769726,16,Random Forest
+diabetes_pills,0.0050690168205555705,17,Random Forest
+bicarbonate,0.004015664237533499,18,Random Forest
+education_level,0.003861484819114223,19,Random Forest
+current_smoker,0.002833946939051832,20,Random Forest
+insulin_use,0.00276110291024389,21,Random Forest

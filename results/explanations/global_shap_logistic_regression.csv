@@ -1,0 +1,22 @@
+Feature,Mean_Abs_SHAP,Rank,Model
+age,1.0529698881367286,1,Logistic Regression
+blood_urea_nitrogen,0.4403604631519592,2,Logistic Regression
+ever_smoked,0.39882596659707853,3,Logistic Regression
+ethnicity,0.38972492222978483,4,Logistic Regression
+uric_acid,0.29842633306625055,5,Logistic Regression
+gender,0.21826304253867054,6,Logistic Regression
+bmi,0.1534521629101779,7,Logistic Regression
+bp_systolic,0.1266498996341249,8,Logistic Regression
+calcium,0.11307845224948626,9,Logistic Regression
+diabetes_pills,0.09959722959189314,10,Logistic Regression
+albumin_serum,0.09823923270775164,11,Logistic Regression
+current_smoker,0.049852538240902605,12,Logistic Regression
+poverty_income_ratio,0.049796353121575716,13,Logistic Regression
+weight_kg,0.04870862705374437,14,Logistic Regression
+bicarbonate,0.0381850317102286,15,Logistic Regression
+diabetes_diagnosed,0.036308890741086924,16,Logistic Regression
+height_cm,0.036207792010836605,17,Logistic Regression
+insulin_use,0.033639153268789905,18,Logistic Regression
+bp_diastolic,0.015008902009156696,19,Logistic Regression
+phosphorus,0.01488876487513582,20,Logistic Regression
+education_level,0.012063806048863318,21,Logistic Regression

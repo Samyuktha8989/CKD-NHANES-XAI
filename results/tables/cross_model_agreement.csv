@@ -1,0 +1,4 @@
+Model_1,Model_2,Spearman_Rank_Correlation,Top_5_Jaccard
+Logistic Regression,Random Forest,0.6948,0.6667
+Logistic Regression,XGBoost,0.526,0.6667
+Random Forest,XGBoost,0.7714,0.6667

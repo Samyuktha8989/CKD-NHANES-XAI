@@ -1,0 +1,29 @@
+Feature,DataType,TargetCorrelation,LeakageRiskLevel,Decision,Rationale
+participant_id,float64,0.0073,None (ID),Excluded,"Administrative identifier, not a medical or biological feature."
+age,float64,0.5373,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+gender,str,N/A,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+ethnicity,str,N/A,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+education_level,float64,-0.0437,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+poverty_income_ratio,float64,0.0473,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+bmi,float64,0.0772,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+weight_kg,float64,0.0554,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+height_cm,float64,-0.0325,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+bp_systolic,float64,0.2821,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+bp_diastolic,float64,0.1105,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+serum_creatinine,float64,0.3429,Severe / Direct Target Leakage,Excluded,Direct mathematical component or derivative of KDIGO CKD diagnostic definition.
+blood_urea_nitrogen,float64,0.3772,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+albumin_serum,float64,-0.1456,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+phosphorus,float64,-0.0969,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+bicarbonate,float64,0.0857,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+calcium,float64,0.0262,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+uric_acid,float64,0.1628,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+urine_creatinine,float64,-0.0268,Severe / Direct Target Leakage,Excluded,Direct mathematical component or derivative of KDIGO CKD diagnostic definition.
+urine_albumin,float64,0.1485,Severe / Direct Target Leakage,Excluded,Direct mathematical component or derivative of KDIGO CKD diagnostic definition.
+albumin_creatinine_ratio,float64,0.1052,Severe / Direct Target Leakage,Excluded,Direct mathematical component or derivative of KDIGO CKD diagnostic definition.
+diabetes_diagnosed,float64,-0.1286,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+insulin_use,float64,-0.0949,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+diabetes_pills,float64,-0.0561,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+ever_smoked,float64,-0.1016,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+current_smoker,float64,0.1294,Low (Approved Clinical Predictor),Included,"Pre-diagnostic risk factor, comorbidity, anthropometric, or routine non-diagnostic laboratory test."
+egfr,float64,-0.6874,Severe / Direct Target Leakage,Excluded,Direct mathematical component or derivative of KDIGO CKD diagnostic definition.
+ckd_stage,str,N/A,Severe / Direct Target Leakage,Excluded,Direct mathematical component or derivative of KDIGO CKD diagnostic definition.

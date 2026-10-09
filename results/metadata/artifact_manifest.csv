@@ -1,0 +1,36 @@
+Filename,RelativePath,Category,Size_KB,Exists,NonEmpty
+confusion_matrix_summary.csv,results/tables/confusion_matrix_summary.csv,Table / Machine-Readable Data,0.14,True,True
+cross_model_agreement.csv,results/tables/cross_model_agreement.csv,Table / Machine-Readable Data,0.18,True,True
+missingness_summary_table.csv,results/tables/missingness_summary_table.csv,Table / Machine-Readable Data,1.42,True,True
+model_comparison_table.csv,results/tables/model_comparison_table.csv,Table / Machine-Readable Data,1.21,True,True
+stability_summary_table.csv,results/tables/stability_summary_table.csv,Table / Machine-Readable Data,0.49,True,True
+ckd_stage_breakdown.csv,results/data_audit/ckd_stage_breakdown.csv,Table / Machine-Readable Data,0.25,True,True
+dataset_overview.csv,results/data_audit/dataset_overview.csv,Table / Machine-Readable Data,0.17,True,True
+descriptive_statistics.csv,results/data_audit/descriptive_statistics.csv,Table / Machine-Readable Data,2.36,True,True
+feature_missingness_audit.csv,results/data_audit/feature_missingness_audit.csv,Table / Machine-Readable Data,1.16,True,True
+leakage_audit.csv,results/data_audit/leakage_audit.csv,Table / Machine-Readable Data,4.58,True,True
+target_distribution.csv,results/data_audit/target_distribution.csv,Table / Machine-Readable Data,0.09,True,True
+feature_variability_logistic_regression.csv,results/stability/feature_variability_logistic_regression.csv,Table / Machine-Readable Data,2.28,True,True
+feature_variability_random_forest.csv,results/stability/feature_variability_random_forest.csv,Table / Machine-Readable Data,2.2,True,True
+feature_variability_xgboost.csv,results/stability/feature_variability_xgboost.csv,Table / Machine-Readable Data,2.02,True,True
+pairwise_stability_logistic_regression.csv,results/stability/pairwise_stability_logistic_regression.csv,Table / Machine-Readable Data,19.95,True,True
+pairwise_stability_random_forest.csv,results/stability/pairwise_stability_random_forest.csv,Table / Machine-Readable Data,14.59,True,True
+pairwise_stability_xgboost.csv,results/stability/pairwise_stability_xgboost.csv,Table / Machine-Readable Data,15.61,True,True
+missingness_stress_test_results.csv,results/missingness_sensitivity/missingness_stress_test_results.csv,Table / Machine-Readable Data,5.65,True,True
+artifact_manifest.csv,results/metadata/artifact_manifest.csv,Table / Machine-Readable Data,3.81,True,True
+environment_versions.txt,results/metadata/environment_versions.txt,Metadata / Configuration,0.17,True,True
+run_summary.json,results/metadata/run_summary.json,Metadata / Configuration,1.0,True,True
+global_shap_logistic_regression.csv,results/explanations/global_shap_logistic_regression.csv,Table / Machine-Readable Data,1.16,True,True
+global_shap_random_forest.csv,results/explanations/global_shap_random_forest.csv,Table / Machine-Readable Data,1.05,True,True
+global_shap_xgboost.csv,results/explanations/global_shap_xgboost.csv,Table / Machine-Readable Data,0.91,True,True
+calibration_plots.png,results/figures/calibration_plots.png,Publication Figure,244.79,True,True
+feature_missingness.png,results/figures/feature_missingness.png,Publication Figure,240.08,True,True
+feature_rank_variability.png,results/figures/feature_rank_variability.png,Publication Figure,448.15,True,True
+global_feature_importance.png,results/figures/global_feature_importance.png,Publication Figure,321.56,True,True
+missingness_sensitivity.png,results/figures/missingness_sensitivity.png,Publication Figure,417.62,True,True
+model_comparison.png,results/figures/model_comparison.png,Publication Figure,132.29,True,True
+roc_pr_curves.png,results/figures/roc_pr_curves.png,Publication Figure,350.69,True,True
+shap_stability_heatmap.png,results/figures/shap_stability_heatmap.png,Publication Figure,187.37,True,True
+target_distribution.png,results/figures/target_distribution.png,Publication Figure,308.09,True,True
+validation_predictions.csv,results/predictions/validation_predictions.csv,Table / Machine-Readable Data,4147.59,True,True
+fold_metrics.csv,results/metrics/fold_metrics.csv,Table / Machine-Readable Data,15.91,True,True

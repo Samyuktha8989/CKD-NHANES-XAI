@@ -1,0 +1,112 @@
+# Central Configuration File for Explainable ML for CKD Classification
+project_name: "Explainable Machine Learning for CKD Classification Using NHANES 2021-2023"
+version: "1.0.0"
+
+data:
+  raw_dataset_path: "CKD_NHANES_2021_2023.csv"
+  target_column: "ckd_present"
+  stage_column: "ckd_stage"
+  filter_invalid_stages: ["Unknown"]
+  positive_class: 1
+  id_column: "participant_id"
+
+features:
+  excluded_identifiers:
+    - "participant_id"
+  excluded_leakage:
+    - "egfr"
+    - "serum_creatinine"
+    - "urine_creatinine"
+    - "urine_albumin"
+    - "albumin_creatinine_ratio"
+    - "ckd_stage"
+  numeric_features:
+    - "age"
+    - "poverty_income_ratio"
+    - "bmi"
+    - "weight_kg"
+    - "height_cm"
+    - "bp_systolic"
+    - "bp_diastolic"
+    - "blood_urea_nitrogen"
+    - "albumin_serum"
+    - "phosphorus"
+    - "bicarbonate"
+    - "calcium"
+    - "uric_acid"
+    - "education_level"
+  categorical_features:
+    - "gender"
+    - "ethnicity"
+    - "diabetes_diagnosed"
+    - "insulin_use"
+    - "diabetes_pills"
+    - "ever_smoked"
+    - "current_smoker"
+
+preprocessing:
+  numeric_imputation_strategy: "median"
+  categorical_imputation_strategy: "most_frequent"
+  categorical_encoding: "onehot"
+  handle_unknown_categories: "ignore"
+  scale_numeric: true
+
+validation:
+  cv_type: "RepeatedStratifiedKFold"
+  n_splits: 5
+  n_repeats: 5
+  random_state: 42
+  decision_threshold: 0.5
+
+models:
+  logistic_regression:
+    enabled: true
+    params:
+      penalty: "l2"
+      C: 1.0
+      max_iter: 2000
+      solver: "lbfgs"
+      random_state: 42
+  random_forest:
+    enabled: true
+    params:
+      n_estimators: 300
+      min_samples_leaf: 2
+      max_features: "sqrt"
+      n_jobs: -1
+      random_state: 42
+  xgboost:
+    enabled: true
+    params:
+      n_estimators: 300
+      learning_rate: 0.05
+      max_depth: 3
+      subsample: 0.8
+      colsample_bytree: 0.8
+      eval_metric: "logloss"
+      n_jobs: -1
+      random_state: 42
+
+explainability:
+  shap_sample_limit: 100  # sample size per fold evaluation (25 folds * 100 = 2500 held-out explanation evaluations)
+  top_k_features: [5, 10]
+  local_samples_per_category: 1  # TP, TN, FP, FN
+
+missingness_sensitivity:
+  enabled: true
+  masking_levels: [0.10, 0.20]
+  masking_seeds: [42, 101, 202, 303, 404]
+
+paths:
+  results_dir: "results"
+  data_audit_dir: "results/data_audit"
+  tables_dir: "results/tables"
+  figures_dir: "results/figures"
+  metrics_dir: "results/metrics"
+  predictions_dir: "results/predictions"
+  explanations_dir: "results/explanations"
+  stability_dir: "results/stability"
+  missingness_dir: "results/missingness_sensitivity"
+  models_dir: "results/models"
+  metadata_dir: "results/metadata"
+  logs_dir: "logs"

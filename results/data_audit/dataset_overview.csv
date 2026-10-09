@@ -1,0 +1,4 @@
+Dataset Version,Rows,Columns,Duplicates
+Raw Kaggle NHANES 2021-2023,11933,29,0
+Valid Analysed Cohort (KDIGO staged),6326,29,0
+Excluded (Unknown Stage / Unmeasured GFR),5607,29,0

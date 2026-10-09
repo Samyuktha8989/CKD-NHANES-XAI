@@ -1,0 +1,10 @@
+{
+  "dataset_file": "CKD_NHANES_2021_2023.csv",
+  "raw_rows": 11933,
+  "raw_cols": 29,
+  "valid_rows": 6326,
+  "excluded_rows": 5607,
+  "total_folds": 25,
+  "metrics_table_markdown": "| Model | ROC_AUC_Summary | PR_AUC_Summary | Sensitivity_Summary | Specificity_Summary | F1_Score_Summary | Accuracy_Summary | MCC_Summary | Brier_Score_Summary |\n| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |\n| Logistic Regression | 0.844 \u00b1 0.012 | 0.824 \u00b1 0.014 | 0.730 \u00b1 0.015 | 0.814 \u00b1 0.017 | 0.740 \u00b1 0.014 | 0.778 \u00b1 0.012 | 0.546 \u00b1 0.025 | 0.156 \u00b1 0.006 |\n| Random Forest | 0.841 \u00b1 0.012 | 0.813 \u00b1 0.016 | 0.719 \u00b1 0.014 | 0.813 \u00b1 0.018 | 0.732 \u00b1 0.013 | 0.772 \u00b1 0.012 | 0.534 \u00b1 0.025 | 0.160 \u00b1 0.006 |\n| XGBoost | 0.846 \u00b1 0.013 | 0.825 \u00b1 0.015 | 0.702 \u00b1 0.016 | 0.827 \u00b1 0.016 | 0.728 \u00b1 0.015 | 0.773 \u00b1 0.013 | 0.535 \u00b1 0.026 | 0.156 \u00b1 0.007 |",
+  "execution_time_seconds": 523.56
+}
